@@ -1,0 +1,58 @@
+.duration{
+  @apply w-full h-full outline-none pl-10 border-lightWhite border-2 rounded
+}
+.label-parent{
+  @apply w-full relative h-[35px]
+}
+.label-input{
+  @apply w-full h-full text-[13px] pl-10 outline-none border-lightWhite border-2 rounded
+}
+.label-img{
+  @apply absolute top-[0.4rem] left-2
+}
+.employee-details-container{
+  @apply flex flex-col items-start justify-center w-full
+}
+.employee-heading{
+  @apply bg-heading p-2 w-full text-blue font-bold
+}
+.employee-details{
+  @apply flex flex-col items-start border-b-2 border-heading p-2 w-full
+  
+}
+.btn{
+  @apply bg-lightBlue text-blue font-bold px-2 py-1 rounded-md border-2 border-transparent
+}
+::-webkit-scrollbar {
+  width: 5px;
+  height: 4px;
+}
+::-webkit-scrollbar-thumb {
+  background: gray;
+  border-radius: 10px;
+}
+
+.calendar-days {
+  @apply grid grid-cols-7 font-bold text-center p-[5px] text-white;
+}
+.day {
+  @apply p-[5px]
+}
+
+.date.empty {
+  @apply bg-transparent border-none
+}
+
+.date.today {
+  @apply bg-transparent border-2 border-lightBlue text-white font-bold rounded-full;
+}
+
+.date {
+  @apply p-[5px] cursor-pointer
+}
+.selected {
+  @apply bg-lightWhite text-blue font-bold rounded-full
+}
+.disabled{
+  @apply opacity-50 rounded-full pointer-events-none cursor-not-allowed
+}
